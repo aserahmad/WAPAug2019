@@ -1,0 +1,88 @@
+/*General settings of the whole pages. I had to try different colors until I reached a color combination that does not visually hinder the user experience.*/
+body {
+	background-color: Lavender;
+	background-image: url(../images/aboutme.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: MidnightBlue;
+	font-family: "Century Gothic", garamond;
+}
+
+/*Making the abbreviations italic will attract the users and they will probably hover over the word.*/
+abbr {
+	font-style: italic;
+}
+
+img, header, nav, footer {
+	text-align: center;
+	margin: 20px;
+}
+
+/*General settings for all types of lists.*/
+ul,ol {
+	display: inline-block;
+	list-style-position: inside;
+	text-align: left;
+	color: white;
+}
+
+ul {
+	list-style-type: square;
+}
+
+/*Making each list item in a close rounded-corner box adds to the visual style of the page.*/
+li {
+	border: 2px solid white;
+	background-color: RoyalBlue;
+	border-radius: 7px;
+	margin: 10px;
+	padding: 10px;
+}
+
+/*Improving the visual style of the definition list.*/
+dl {
+	background-color:rgba(0,0,0,0.2);
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	margin:5px;
+	padding:10px;
+}
+
+/*Styling of the two specific classes: importand and definitions.*/
+.important {
+	font-weight: bold;
+	color: DarkGoldenRod;
+}
+
+.defs {
+	font-weight:bold;
+	font-style:italic;
+	color:Gold;
+}
+
+/*Styling pseudo classes & elements: link class (to control hover and click behavior) and first-letter element (to create a drop-down first letter).*/
+a:link {
+	color: white;
+	text-decoration:none;
+}
+
+a:visited {
+	color: Lavender;
+}
+
+a:hover {
+	color: GoldenRod;
+	text-decoration:underline;
+}
+
+a:active {
+	color: black;
+	font-weight:bold;
+}
+
+p::first-letter {
+	font-weight:bold;
+	font-size:150%;
+}
