@@ -26,7 +26,7 @@ h1 {
 }
 
 .content {
-    
+    margin: auto;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -35,10 +35,32 @@ h1 {
     border-radius: 20px;
 }
 
+.content-grid {
+    display: flex;
+}
+
+#overview-image {
+    border-top-right-radius: 16px;
+}
+
 #overallrating {
     font-size: 48pt;
     font-weight: bold;
     color: red;
+    background-image: url("movieimages/rbg.png");
+    border-top-left-radius: 16px;
+}
+
+#overallrating-pic {
+    border-top-left-radius: 16px;
+}
+
+#col1-2 {
+    display: flex;
+}
+
+#col1,#col2 {
+    margin: 2%;
 }
 
 .review {
@@ -49,15 +71,42 @@ h1 {
     padding: 8px;
 }
 
-.reviewicon, criticicon {
+.reviewicon, .criticicon {
     float: left;
     margin-right: 5px;
 }
 
-.critic {
+.critic , .review {
     overflow: hidden;
 }
 
 .pub {
     font-style: italic;
+}
+
+#rightContent {
+    background-color: #A2B964;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+dl {
+    margin: 10pt;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#content-footer {
+    text-align: center;
+    background-color: #A2B964;
+    height: 20px;
+    border-bottom-left-radius: 16px;
+}
+
+#validators {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;"
 }
