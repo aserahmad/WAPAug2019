@@ -1,4 +1,21 @@
-/*This is the style sheet for the movie review page.*/
+/*This is the style sheet for the movie review page. It is supposed to be similar to the spec.pdf file.
+
+This hardes things about this assignment are:
+ * Having to apply many aspects that I have just learnd about, and which interact with each other unexpectedly.
+ 
+ * The complex layout of the page required.
+
+ * However, What helped me do the task is thinking of the page as a table (kind of what used to be done in earlier
+ versions of HTML). What remains is the structure of that table: how will the different cells be arranged and
+ what content will be placed in each one.
+
+ * The flex display is very tricky, and givs a lot of possibilities, too.
+
+ * Something that made the task hard for me is having the content ready. I should have had a plan for processing 
+ that content in terms of deciding what divs (and other elements) will be used and in what way. However, that 
+ comes with a lot of experience.
+
+*/
 body {
     margin: 0;
     padding: 0;
@@ -35,7 +52,7 @@ h1 {
     border-radius: 20px;
 }
 
-.content-grid {
+.content-grid,#col1-2 {
     display: flex;
 }
 
@@ -53,10 +70,6 @@ h1 {
 
 #overallrating-pic {
     border-top-left-radius: 16px;
-}
-
-#col1-2 {
-    display: flex;
 }
 
 #col1,#col2 {
