@@ -31,6 +31,20 @@ table, th, td
 {
     border: 1px solid #888;
 }
+
+#tblTasks {
+    display: table;
+    width: 90%;
+}
+
+.col1 {
+    width:50%;
+}
+
+.col2, .col3 {
+    width:25%;
+}
+
 section {
     margin:20px 0 0 20px;
 }
