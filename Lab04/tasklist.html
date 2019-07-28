@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--It was a challenging task to write all this code. However, it was worth it. I learned some useful tips about using
+header and section tags, and also the different input elements like textbox, datepicker, and combobox. This form is static.
+So, no submit methods are implemented and there are no attributes in the buttons. These buttons are only links which are
+supposed to perform certain tasks, and they are not form buttons.
+
+Something funny happened: The task textbox did not appear when I first tried to display the page. I checked its html tag
+and it was fine. So, I had to check all tags within the form tag to see if there was a mistake of syntax error in another
+tag that is affecting it. I commented out each tag until I isolated the problem and it showed to be in the textbox, but
+with no clue on its reason. So, I copied the tag from the book and pasted it under the tag in my html page and performed
+a letter-by-letter comparison to find that the error was a single typo. I wrote "intput" instead of "input"! So, the
+browser had the right to ignore my request to render a non-existing element :)-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Task list</title>
+<link rel="stylesheet" type="text/css" href="tasks.css" media="screen" />
+	<script src="tasks.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+	<span>Task list</span>
+</header>
+<main>
+	<section>
+	<form>
+		<div>
+			<label>Task</label> <input type="text" required="required" name="task" class="large" placeholder="Breakfast at Tiffanys" />
+		</div>
+		<div>
+			<label>Required by</label> <input type="date" required="required" name="requiredBy" />
+		</div>
+		<div>
+			<label>Category</label>
+			<select name="category">
+				<option value="Personal" selected>Personal</option>
+				<option value="Work">Work</option>
+			</select>
+		</div>
+		<nav>
+			<a id="save-task" href="#">Save task</a> <a id="clear-task" href="#">Clear task</a>
+		</nav>
+	</form>
+	</section>
+	<section>
+		<table id="tblTasks">
+		<colgroup>
+			<col width="50%">
+			<col width="25%">
+			<col width="25%">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Due</th>
+			<th>Category</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Return library books</td>
+			<td><time datetime="2013-10-14">2013-10-14</time></td>
+			<td>Personal</td>
+		</tr>
+		<tr class="even">
+			<td>Perform project demo to stakeholders</td>
+			<td><time datetime="2013-10-14">2013-10-14</time></td>
+			<td>Work</td>
+		</tr>
+		<tr>
+			<td>Meet friends for dinner</td>
+			<td><time datetime="2013-10-14">2013-10-14</time></td>
+			<td>Personal</td>
+		</tr>
+		</tbody>
+		</table>
+		<nav>
+			<a id="add-task" href="#">Add task</a>
+		</nav>
+	</section>
+</main>
+	<footer>You have 3 tasks<br>
+		<h2><a href="../index.html">Home</a></h2></footer>
+</body>
+</html>
