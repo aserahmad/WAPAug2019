@@ -57,6 +57,12 @@ li {
 #header, li, #footer {
     text-align: center;
 }
+
+#css-validator {
+	height:31px;
+	width:88px;
+}
+
 @media only screen and (max-width: 599px){
 
 #table {
