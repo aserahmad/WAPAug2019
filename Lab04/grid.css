@@ -67,7 +67,7 @@ li {
 	padding: 0px;
     height: 600px;
     grid-template-rows: 300px 300px;
-    frid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
 }
 
     #col1 {
