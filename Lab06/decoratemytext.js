@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 "use strict";
 window.onload = pageLoad;
+var myTimer=null; //global variable needed for setting the timer for 'decoClicked' event
 
 function pageLoad () {
     //attaching event handler for the button click
@@ -17,16 +18,20 @@ function pageLoad () {
 }
 
 function decoClicked () {
+    if (myTimer!==null) { //if button is clicked and the timer is working, stop the timer
+        clearInterval(myTimer);
+        myTimer=null;
+    } else { //Task 5: Increasing font size of the text area by 2pt every 500ms
+        myTimer = setInterval(function () {
+            b.style.fontSize = (parseInt(b.style.fontSize) + 2) + "pt";
+        }, 500);
+    }
     alert("Hello, world!"); //Task 1 & 2: adding the alert and linking it to clicking the decoration button
     //Task 3: changing font size & enlarging the textarea
     var b = document.getElementById("mytxtarea");
     b.cols = "50";
     b.rows = "10";
     b.style.fontSize = "24pt";
-    //Task 5: Increasing font size of the text area by 2pt every 500ms
-    setInterval(function(){
-        b.style.fontSize = (parseInt(b.style.fontSize) + 2) + "pt";
-        },500);
 }
 
 function chkboxChanged () {
