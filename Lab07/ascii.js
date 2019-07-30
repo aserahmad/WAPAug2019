@@ -21,10 +21,11 @@ function startClicked() {
     originalText = '';
   }
 
-  // empty the text area,  enable the stop button and disable the start button
+  // empty the text area, enable the stop button and disable the start button, animation select,
   document.getElementById("text-area").value = '';
   document.getElementById("stop").disabled = false;
   document.getElementById("start").disabled = true;
+  document.getElementById("animation").disabled = true;
 
   // get user selections and animate according to them
   animate();
@@ -85,8 +86,9 @@ function showFrame(frames) {
 
 function stopClicked() {
 
-  // enable start button and disable the stop button again
+  // enable start button, animation select, and disable the stop button again
   document.getElementById("start").disabled = false;
+  document.getElementById("animation").disabled = false;
   document.getElementById("stop").disabled = true;
 
   // return original text
