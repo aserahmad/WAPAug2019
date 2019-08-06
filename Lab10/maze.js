@@ -10,8 +10,7 @@ $(document).ready(function() {
         gameStarted = true; // set game start.
         $('#status').text("Try to go to the \"E\" without touching the boundaries."); // reset game title.
         $('#maze div.boundary').removeClass('youlose'); // reset boundary.
-        $('#maze div.boundary').on('mouseenter', lose); // attach mouse event to boundary.
-        $('#maze').on('mouseleave', lose); // attach mouse event to rest of the body.
+        $('#maze, #maze div.boundary').on('mouseenter', lose); // attach mouse event to boundary + maze div.
     });
 
     /**
@@ -26,7 +25,7 @@ $(document).ready(function() {
         $('#status').text("You win! Click the \"S\" to do it again."); // announce winning by alert message.
     }
         $('#maze div.boundary').removeClass('youlose'); // reset boundary.
-        $('#maze, #maze div.boundary').off(); // detach mouse event.
+        $('#maze, #maze div.boundary').off(); // detach any event from boundary + maze div.
     });
 });
 
