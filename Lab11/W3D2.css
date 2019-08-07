@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    text-align: center;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    border: black 1px solid;
+
+}
+
+#home-link {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.hidden {display: none;}
