@@ -17,3 +17,5 @@ I followed the steps in the book, but of course replaced the "automatic" deploym
 My understanding of the subject has increased considerably (though I still need more practice). I understood the importance and the beauty of the MVC model. It makes things clear, indeed.
 
 To join previous parts of this course, I added a CSS file and a background image. Both are shared by the three web pages (index.jsp, form.html, and result.jsp).
+
+The project worked on the local server using this URL: http://localhost:8080/BeerAdvisor_war_exploded/
